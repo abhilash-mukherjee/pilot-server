@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 const app = express();
 app.get('/hello-world', (req: Request, res: Response) => {
+  console.log(req.headers);
   res.send('Hello, World!');
 });
 
